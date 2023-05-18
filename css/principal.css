@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset da modelo */
+.corpo, .conteudos {
+	max-width: 2000px;
+	padding: 0;
+}
+.conteudos {
+	background-image: -moz-linear-gradient( 0deg, rgba(241,248,232,0) 44%, rgb(241,248,232) 44%, rgb(241,248,232) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgba(241,248,232,0) 44%, rgb(241,248,232) 44%, rgb(241,248,232) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgba(241,248,232,0) 44%, rgb(241,248,232) 44%, rgb(241,248,232) 100%);
+	padding-top: 37px;
+}
+.titulos,.conteudos-navegacao {
+	display: none;
+	visibility: hidden;
+}
+/* banners */
+.banners {
+	display: block;
+	z-index: 12;
+}
+.quemsomos-fiquepordentro-container {
+	display: block;
+	margin: 0 auto;
+	max-width: 1140px;
+	overflow: hidden;
+	padding: 0 2%;
+	padding-bottom: 20px;
+	position: relative;
+	width: 100%;
+}
+.quemsomos-container, .fiquepordentro-container {
+	display: inline-block;
+	float: left;
+}
+/* quem somos */
+.quemsomos-container {
+	margin-right: 2%;
+	max-width: 410px;
+}
+.quemsomos-cabecalho {
+	border-bottom: dashed 1px #075e17;
+	color: rgba(7,94,23,0.35);
+	font-family: 'roboto_condensedbold';
+	font-size: 5rem;
+	letter-spacing: -.1rem;
+	line-height: 5.2rem;
+	margin-bottom: 25px;
+	padding-bottom: 18px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.quemsomos-cabecalho strong {
+	color: rgba(7,94,23,0.14);
+	display: block;
+	font-size: 8rem;
+}
+.quemsomos-subtitulo {
+	color: #075e17;
+	display: block;
+	font-family: 'roboto_condensedbold';
+	font-size: 2rem;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.quemsomos-subtitulo strong {
+	display: block;
+	font-size: 3rem;
+}
+.quemsomos {
+	display: block;
+	width: 100%;
+}
+.quemsomos-texto {
+	color: #67a01c;
+	font-family: 'roboto_condensedregular';
+	font-size: 2rem;
+	display: inline-block;
+	line-height: 2.5rem;
+	margin-right: 10%;
+	text-align: justify;
+	width: 58%;
+}
+.quemsomos-img {
+	background: url(../img/home-quemsomos-img.png) no-repeat left center;
+	background-size: contain;
+	display: inline-block;
+	height: 258px;
+	width: 30%;
+}
+/* fique por dentro */
+.fiquepordentro-container {
+	float: right;
+	max-width: 640px;
+	padding: 0 2%;
+	padding-right: 0;
+	width: 100%;
+}
+.fiquepordentro-cabecalho {
+	display: block;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 100%;
+}
+.fiquepordentro-titulo {
+	color: #67a01c;
+	display: inline-block;
+	float: left;
+	font-family: 'mv_boliregular';
+	font-size: 2rem;
+	line-height: 2.5rem;
+	text-transform: uppercase;
+}
+.fiquepordentro-titulo strong {
+	color: #075e17;
+	display: block;
+	font-family: 'roboto_condensedbold';
+	font-weight: normal;
+	font-size: 3.5rem;
+}
+.fiquepordentro-link {
+	background: #075e17;
+	border: solid 1px transparent;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	color: #ffffff;
+	display: inline-block;
+	float: right;
+	font-family: 'roboto_condensedregular';
+	font-size: 1.5rem;
+	max-width: 128px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.fiquepordentro-link:hover {
+	background: transparent;
+	border: solid 1px #075e17;
+	color: #075e17;
+	text-decoration: none;
+}
+.fiquepordentro-chamadas {
+	display: block;
+	width: 100%;
+}
+.fiquepordentro-chamadas div:first-child {
+	margin-right: 5.2%;
+}
+.fiquepordentro {
+	background: #ffffff;
+	border: solid 1px #dce3d4;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	display: inline-block;
+	margin: 0;
+	max-width: 284px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.fiquepordentro:before {
+	background: #89ae22;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	bottom: -3px;
+	content: '';
+	display: block;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.fiquepordentro:after {
+	background: #ffffff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.fiquepordentro-img {
+	border-radius: 8px 8px 0 0;
+	display: block;
+	margin-bottom: 5px;
+	max-width: 284px;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+.fiquepordentro-data {
+	background: #c4df9b;
+	color: #075e17;
+	display: block;
+	font-family: 'roboto_condensedbold';
+	font-size: 2rem;
+	left: 0;
+	padding: 8px;
+	position: absolute;
+	text-align: center;
+	top: 110px;
+	z-index: 3;
+}
+.fiquepordentro-chamada {
+	color: #a3a39a;
+	font-family: 'myriad_proregular';
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 9px;
+	position: relative;
+	text-align: justify;
+	z-index: 3;
+}
+a .fiquepordentro-chamada {
+	color: #a3a39a;
+}
+a:hover .fiquepordentro-chamada {
+	color: #075e17;
+	text-decoration: none !important;
+}
+.fiquepordentro-chamada-titulo {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+@media screen and (max-width: 1133px) {
+.conteudos {
+	background-image: none;
+	padding-top: 37px;
+}
+.quemsomos-fiquepordentro-container {
+	padding: 0;
+}
+.quemsomos-container, .fiquepordentro-container {
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+.quemsomos-container {
+	max-width: 1123px;
+	padding: 0 2%;
+}
+.quemsomos-texto {
+	margin-top: 15px;
+	vertical-align: top;
+}
+.fiquepordentro-container {
+	background: #f1f8e8;
+	max-width: 1123px;
+	padding: 15px;
+}
+.fiquepordentro-chamadas {
+	text-align: center;
+}
+}
+@media screen and (max-width: 649px) {
+.fiquepordentro-chamadas div:first-child {
+	margin-right: auto;
+}
+.fiquepordentro {
+	margin: 20px  auto;
+}
+}
+@media screen and (max-width: 767px) {
+.corpo {
+	margin-top: 40px;
+}
+.quemsomos-cabecalho {
+	font-size: 2rem;
+	line-height: 2.2rem;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+.quemsomos-cabecalho strong {
+	font-size: 3rem;
+}
+.quemsomos-subtitulo {
+	font-size: 1.6rem;
+	margin-bottom: 5px;
+}
+.quemsomos-subtitulo strong {
+	display: block;
+	font-size: 2.65rem;
+}
+.fiquepordentro-titulo {
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+.fiquepordentro-titulo strong {
+	font-size: 2.7rem;
+}
+
+}
